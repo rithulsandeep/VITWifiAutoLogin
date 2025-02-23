@@ -1,27 +1,19 @@
 {
-    "manifest_version": 3,
-    "name": "WiFi Auto-Login",
-    "version": "1.0",
-    "description": "Logs into VIT's Wifi using your credentials.",
-    "permissions": [
-      "storage",
-      "scripting",
-      "activeTab"
-    ],
-    "host_permissions": [
-      "http://phc.prontonetworks.com/*"
-    ],
-    "icons": {
-      "16": "icon.png",
-      "48": "icon.png",
-      "128": "icon.png"
-    },
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": "icon.png"
-    },
-    "background": {
-      "service_worker": "background.js"
-    }
+  "manifest_version": 3,
+  "name": "WiFi Auto-Login",
+  "version": "1.2",
+  "description": "Logs in to the WiFi portal with one click.",
+  "permissions": ["storage", "scripting", "activeTab"],
+  "host_permissions": ["http://phc.prontonetworks.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_icon": "icon.png"
   }
-  
+}
